@@ -26,8 +26,6 @@
   /* position: relative; */
   vertical-align: bottom;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .heading img {
@@ -212,6 +210,8 @@
     margin-bottom: 2%;
     color: #9c46da;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .heading img {
     width: 35px;
@@ -290,6 +290,8 @@
     margin-bottom: 2%;
     color: #9c46da;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .heading img {
     width: 35px;
@@ -367,6 +369,8 @@
     margin-bottom: 2%;
     color: #9c46da;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .heading img {
     width: 30px;
