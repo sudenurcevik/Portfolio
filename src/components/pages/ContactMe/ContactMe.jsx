@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import mailPhoto from "../../../assets/mail.gif";
 import chat from "../../../assets/chat.png";
 import "./ContactMe.css";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactMe() {
   const [formData, setFormData] = useState({
@@ -26,7 +26,7 @@ function ContactMe() {
 
     const data = {
       ...formData,
-      access_key: "af31c3fa-f10e-4b35-a800-5f2fb57c11ac",
+      access_key: `${process.env.WEB3_FORMS_APP_KEY}`,
     };
 
     const res = await fetch("https://api.web3forms.com/submit", {

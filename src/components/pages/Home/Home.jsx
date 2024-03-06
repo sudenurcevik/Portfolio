@@ -1,6 +1,5 @@
 // Home.jsx
 import React from "react";
-import { motion } from "framer-motion";
 import photo from "../../../assets/my-photo.jpg";
 import "./Home.css"; // Ensure to have a corresponding CSS file
 import CodeIcon from "@mui/icons-material/Code";
@@ -19,18 +18,16 @@ const Home = ({ windowSize }) => {
     <div id="home" class="mycontainer">
       <section class="home-section">
         <div class="home">
-          <motion.img
+          <img
             className="animated-image"
             src={photo}
-            alt="Your Photo"
+            alt="My Photo"
             initial="initial"
             animate="animate"
           />
           <div class="intro">
             <div class="intro-text">
-              <h1>
-                Hello, I'm <h1> Sude Nur Çevik</h1>
-              </h1>
+              <h1>Hello, I'm Sude Nur Çevik</h1>
               <p>
                 I am a <b style={{ color: "#424874" }}>Frontend Developer</b> in
                 Turkey.
@@ -80,7 +77,11 @@ const Home = ({ windowSize }) => {
                   />
                 )}
               </a>
-              <a class="download-button">
+              <a
+                class="download-button"
+                href="/Sude_Nur_Çevik_Resume.pdf"
+                target="_blank"
+              >
                 <span>See Resume</span>
                 <DownloadIcon
                   className="icons"
