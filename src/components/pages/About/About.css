@@ -23,13 +23,16 @@
   font-size: 2.5rem;
   margin-bottom: 1.5%;
   color: #9c46da;
-  position: relative;
+  /* position: relative; */
   vertical-align: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading img {
   width: 50px;
-  position: absolute;
+  /* position: absolute; */
   margin-left: 0.5rem;
   bottom: 0.3rem;
 }
