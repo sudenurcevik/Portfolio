@@ -1,0 +1,130 @@
+.contactme-container {
+  background-color: #f9f9f9;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 0; /* Add padding for spacing */
+}
+
+.form-container {
+  background: linear-gradient(270deg, #b78bf14b, #88cbf069);
+  display: flex;
+  width: 100%;
+  min-height: 60vh;
+  justify-content: space-around;
+  margin-top: 4rem;
+  border-radius: 3rem;
+  padding: 2rem;
+  position: relative; /* Add relative positioning */
+}
+
+/* Divider Styles */
+.form-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #fff; /* Adjust divider color */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-left,
+.contact-right {
+  width: 50%;
+  padding: 0 1rem; /* Add padding for spacing */
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contact-left > * {
+  width: 100%; /* Adjust input width */
+  height: 70px;
+  border: none;
+  outline: none;
+  color: #666;
+  border-radius: 3.2rem;
+  padding-left: 2rem;
+}
+
+.contact-left textarea {
+  height: 160px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-left input:focus,
+.contact-left textarea:focus {
+  border: 2px solid #ff994f;
+}
+
+.contact-left input::placeholder,
+.contact-left textarea::placeholder {
+  color: lightgrey;
+}
+
+.contact-left button {
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  border-radius: 3.2rem;
+  background-color: #424874;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-left button:hover{
+  transform: scale(1.03);
+}
+
+.contact-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-right img {
+  max-width: 100%; /* Adjust max-width for responsiveness */
+  width: 27rem;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 992px) {
+  .form-container {
+    flex-direction: column-reverse;
+  }
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    padding: 0; /* Remove padding */
+  }
+  .form-divider {
+    display: none; /* Hide the divider on smaller screens */
+  }
+}
+
+
+/* Customize the progress bar of the ToastContainer */
+/* Customize the progress bar of the ToastContainer */
+
+
+/* Custom styles for the progress bar */
+.Toastify__progress-bar {
+  background-color: #9400ff !important; /* Change the background color of the progress bar */
+  height: 4px !important; /* Adjust the height of the progress bar */
+}
+
+/* Custom styles for the success icon */
+.Toastify__toast--success .Toastify__icon {
+  color: 9400ff !important; /* Change the color of the success icon */
+}
+
+/* Custom styles for the error icon */
+.Toastify__toast--error .Toastify__icon {
+  color: red !important; /* Change the color of the error icon */
+}

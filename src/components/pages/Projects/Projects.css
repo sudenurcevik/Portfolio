@@ -1,0 +1,86 @@
+/* Projects.css */
+
+.projects-container {
+  margin: 3rem auto;
+  width: 100%;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 25rem;
+  flex-direction: column;
+}
+
+.project {
+  background: linear-gradient(90deg, #f9f9f9, #cce4fc);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 1.5rem;
+  padding: 2rem 0 2rem 2rem;
+}
+
+.left {
+  flex-direction: row-reverse;
+  background: linear-gradient(270deg, #f9f9f9, #cce4fc);
+  padding: 2rem 2rem 2rem 0;
+}
+
+.project-info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: left;
+  color: #424874;
+}
+
+.info-right {
+  text-align: right;
+}
+
+.project-info h2 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+/* .project-links {
+  margin-top: 10px;
+} */
+
+.project-links a {
+  margin-right: 10px;
+  color: #333;
+  font-size: 20px;
+  transition: transform 300ms ease-in-out; /* Change scale to transform */
+}
+
+.project-links img {
+  width: 30px;
+}
+
+.project-links img:hover {
+  transform: scale(1.1); /* Apply the scale transform on hover */
+}
+
+.project-images {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .project {
+    flex-direction: column-reverse;
+    padding: 1.5rem;
+    background: linear-gradient(180deg, #f9f9f9, #cce4fc);
+
+  }
+  .project-images {
+    width: 100%;
+  }
+  .project-info {
+    width: 100%;
+    text-align: center;
+  }
+}

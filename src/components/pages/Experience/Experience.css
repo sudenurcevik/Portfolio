@@ -1,0 +1,179 @@
+.experience-container {
+  background-color: #f9f9f9;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.job-container {
+  position: relative;
+  padding: 10px 50px;
+  width: 50%;
+  z-index: 30;
+}
+
+.job-container:nth-child(1) {
+  animation-delay: 0s;
+}
+.job-container:nth-child(2) {
+  animation-delay: 1s;
+}
+.job-container:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.text-box {
+  padding: 20px 30px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.left-container {
+  left: 0;
+}
+.right-container {
+  left: 50%;
+}
+
+.job-container img {
+  position: absolute;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #9c46da;
+  right: -25px;
+  top: 32px;
+}
+
+.right-container img {
+  left: -25px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #9c46da;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  animation: moveline 3s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.text-box h2 {
+  font-weight: 600;
+  color: #424874;
+}
+.text-box h3 {
+  font-weight: 400;
+  color: #424874;
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #cce4fc;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #9c46da;
+  right: -15px;
+}
+
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #9c46da;
+  left: -15px;
+}
+
+.start-point {
+  padding-top: 3rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+  animation: appear 0s linear 3s forwards; /* Animation with a delay of 4 seconds */
+  opacity: 0; /* Initially hidden */
+}
+
+.start-point .point {
+  width: 30px;
+  height: 30px;
+  background-color: #9c46da; /* Adjust color as needed */
+  border-radius: 50%;
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1; /* Fade in at the end of the animation */
+  }
+}
+/* Media queries for responsiveness */
+
+@media (max-width: 992px) {
+  .timeline {
+    margin: 50px auto;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+  .job-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .text-box small {
+    margin-bottom: 10px;
+  }
+  .right-container {
+    left: 0;
+  }
+  .left-container img,
+  .right-container img {
+    left: 5px;
+  }
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid #9c46da;
+    border-left: 0;
+    left: -15px;
+  }
+  .start-point {
+    justify-content: flex-start;
+    left: 16px;
+    top: 1px;
+  }
+}

@@ -1,0 +1,213 @@
+@import "../../../App.css";
+
+.mycontainer {
+  background-color: #f9f9f9;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.home-section {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 4rem;
+}
+
+.home {
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  justify-content: space-between;
+  height: auto;
+}
+
+.intro-text {
+  display: flex;
+  align-items: flex-start; /* Align text to the left */
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.intro-text h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+  color: #9c46da;
+  font-weight: 500;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.intro-text p {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.intro-text h1 h1 {
+  background-image: linear-gradient(to right, #cce4fc, #9e62c9);
+  /* Set background-clip to text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the actual text transparent */
+  color: transparent;
+  font-weight: bold;
+}
+
+.explanation-text{
+  opacity: 0.8;
+}
+
+.animated-image {
+  width: 30rem;
+  max-width: 400px;
+  background:linear-gradient(270deg, #b78bf14b, #88cbf069);
+  height: auto;
+  border: 0.5rem solid #cce4fcce;
+  box-shadow: var(--customBoxShadowForImage);
+  object-fit: cover;
+  animation: borderTransition 6s ease-in-out infinite;
+}
+
+@keyframes borderTransition {
+  0%,
+  100% {
+    border-radius: 60% 60% 70% 50%/75% 55% 60% 50%;
+  }
+  50% {
+    border-radius: 50% 60% 65% 50%/50% 70% 50% 70%;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.explore-button {
+  display: inline-flex; /* Use flexbox to align items */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 0.5rem;
+  background-color: #424874;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2rem;
+  width: 45%;
+  /* transition: background-color 0.3s ease; */
+  transition: transform 300ms ease-in-out;
+  white-space: nowrap;
+}
+
+.explore-button:hover {
+  transform: scale(1.05);
+}
+
+.download-button {
+  display: inline-flex; /* Use flexbox to align items */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 0.5rem;
+  background-color: #cce4fc;
+  color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  width: 45%;
+  transition: transform 300ms ease-in-out;
+  white-space: nowrap;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+}
+
+.explore-button svg {
+  width: 1.2em;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .buttons {
+    width: 100%;
+    font-size: smaller;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .mycontainer {
+    height: auto;
+    padding: 3rem 0 3rem 0;
+  }
+
+  .home {
+    flex-direction: column;
+    padding-top: 5rem;
+    height: auto;
+  }
+
+  .intro {
+    width: 80%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    margin-top: -5rem;
+  }
+
+  .intro-text {
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  .intro-text h1 {
+    font-size: 2.7rem;
+  }
+  .intro-text p {
+    font-size: 1.2rem;
+  }
+
+  .animated-image {
+    width: 16rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    width: 80%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    margin-top: -5rem;
+  }
+
+  .intro-text {
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text span {
+    font-size: smaller;
+  }
+
+  .animated-image {
+    width: 12rem;
+  }
+  .buttons {
+    font-size: 0.5rem;
+  }
+  /* .explore-button{
+    width: 50;
+  } */
+}
