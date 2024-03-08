@@ -176,6 +176,7 @@
   width: 50%;
   height: 1rem;
   transition: scale 200ms ease-in-out;
+  margin: 0 auto;
 }
 
 .img-slider-dot-btn:hover,
