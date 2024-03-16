@@ -41,8 +41,9 @@ const About = ({ windowSize }) => {
             <div className="skill-card" id="first-card">
               <h4>Hard Skills</h4>
               <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
+                <li>HTML / CSS</li>
+                <li>Tailwind</li>
+                <li>Material UI</li>
                 <li>JS / TS</li>
                 <li>React</li>
               </ul>

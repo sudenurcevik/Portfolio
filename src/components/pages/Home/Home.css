@@ -72,7 +72,7 @@
   max-width: 400px;
   background:linear-gradient(270deg, #b78bf14b, #88cbf069);
   height: auto;
-  border: 0.5rem solid #cce4fcce;
+  border: 0.5rem solid #dcc2e8ce;
   box-shadow: var(--customBoxShadowForImage);
   object-fit: cover;
   animation: borderTransition 6s ease-in-out infinite;
