@@ -1,3 +1,13 @@
+// Thesis
+import thesis1 from "../../../assets/thesis/1.png";
+import thesis2 from "../../../assets/thesis/2.png";
+import thesis3 from "../../../assets/thesis/3.png";
+import thesis4 from "../../../assets/thesis/4.png";
+import thesis5 from "../../../assets/thesis/5.png";
+import thesis6 from "../../../assets/thesis/6.png";
+import thesis7 from "../../../assets/thesis/7.png";
+import thesis8 from "../../../assets/thesis/8.png";
+
 // Hair Donation
 import photo1 from "../../../assets/hair-donation/full-capture.png";
 import photo2 from "../../../assets/hair-donation/admin-full-capture.png";
@@ -21,6 +31,23 @@ import ambrosia7 from "../../../assets/ambrosia/ambrosia7.png";
 import simongame from "../../../assets/simon-game.png";
 
 const projects = [
+  {
+    urls: [
+      thesis1,
+      thesis2,
+      thesis3,
+      thesis4,
+      thesis5,
+      thesis6,
+      thesis7,
+      thesis8,
+    ],
+    title: "Pincident Lite",
+    explanation:
+      "Pincident Lite is a multi-tenant company management system using RABAC (role-centric attribute-based access control) in a microservice environment. It allows various companies to subscribe and customize the system according to their needs. Authorized personnel can define roles and create policies with a built-in policy editor. Also, it includes essential modules for managing the company, departments, regions, users, and more.",
+    githubLink: "https://github.com/Thesis-Frontend/Frontend",
+    websiteLink: "https://pincident-lite.vercel.app/",
+  },
   {
     urls: [photo1, photo2],
     title: "Hair Donation Website",

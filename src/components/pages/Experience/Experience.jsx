@@ -25,12 +25,32 @@ const Experience = ({ isVisible }) => {
       <div className="container">
         <h2 className="heading">Experiences</h2>
         <div className="timeline">
+          <div className="job-container right-container">
+            <img src={work} alt="work" />
+            <div className="text-box">
+              <h2>Lead Frontend Developer</h2>
+              <h3>DeltaSmart Technologies</h3>
+              <small>Sep 2023 - Present</small>
+              <p className="description">
+                After my good work, I was promoted to the position of lead
+                frontend developer. In addition to my previous responsibilities,
+                I am now responsible for the deployment processes of all
+                projects. I also do code review and github branch management for
+                the team I manage. On the other hand, I have a very important
+                role in the development process of projects by regularly
+                attending meetings with customers. As one of the most important,
+                I am also responsible for adapting old source codes to current
+                technologies.
+              </p>
+              <span className="right-container-arrow"></span>
+            </div>
+          </div>
           <div className="job-container left-container">
             <img src={work} alt="work" />
             <div className="text-box">
               <h2>Frontend Developer</h2>
               <h3>DeltaSmart Technologies</h3>
-              <small>Oct 2022 - Present</small>
+              <small>Sep 2022 - Sep 2023</small>
               <p className="description">
                 After a successful internship, I started working at DeltaSmart
                 Technologies as a front-end developer. I specialize in crafting
