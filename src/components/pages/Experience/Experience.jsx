@@ -9,7 +9,7 @@ const Experience = ({ isVisible }) => {
 
   useEffect(() => {
     console.log(isVisible);
-    if (isVisible) {
+    if (isVisible && !animationStarted) {
       const jobContainers = document.querySelectorAll(".job-container");
       console.log(jobContainers);
       jobContainers.forEach((container, index) => {
@@ -25,22 +25,26 @@ const Experience = ({ isVisible }) => {
       <div className="container">
         <h2 className="heading">Experiences</h2>
         <div className="timeline">
+          <div className="job-container left-container">
+            <img src={college} alt="college" />
+            <div className="text-box">
+              <h2>Bachelor of Computer Engineering Graduation</h2>
+              <h3>Izmir Institute of Technology</h3>
+              <small>October 2019 - June 2024</small>
+              <p className="description">
+                I successfully completed my Bachelor of Computer Engineering degree with a GPA of 3.45.
+              </p>
+              <span className="left-container-arrow"></span>
+            </div>
+          </div>
           <div className="job-container right-container">
             <img src={work} alt="work" />
             <div className="text-box">
               <h2>Lead Frontend Developer</h2>
               <h3>DeltaSmart Technologies</h3>
-              <small>Sep 2023 - Present</small>
+              <small>September 2023 - Present</small>
               <p className="description">
-                After my good work, I was promoted to the position of lead
-                frontend developer. In addition to my previous responsibilities,
-                I am now responsible for the deployment processes of all
-                projects. I also do code review and github branch management for
-                the team I manage. On the other hand, I have a very important
-                role in the development process of projects by regularly
-                attending meetings with customers. As one of the most important,
-                I am also responsible for adapting old source codes to current
-                technologies.
+                I was promoted to lead frontend developer due to my outstanding performance. Besides my previous responsibilities, I oversee deployment processes, conduct code reviews, and manage GitHub branches for my team. Additionally, I actively participate in client meetings and play a crucial role in updating legacy code to current technologies.
               </p>
               <span className="right-container-arrow"></span>
             </div>
@@ -50,17 +54,9 @@ const Experience = ({ isVisible }) => {
             <div className="text-box">
               <h2>Frontend Developer</h2>
               <h3>DeltaSmart Technologies</h3>
-              <small>Sep 2022 - Sep 2023</small>
+              <small>September 2022 - September 2023</small>
               <p className="description">
-                After a successful internship, I started working at DeltaSmart
-                Technologies as a front-end developer. I specialize in crafting
-                dynamic digital solutions tailored to modern business needs. My
-                primary focus lies in spearheading three key projects: ISG,
-                Disaster Notification, and Real Estate projects. Through
-                collaborative efforts and innovative frontend technologies, I
-                contribute to the development of intuitive and user-centric
-                platforms that redefine industry standards and empower users
-                with seamless experiences.
+                After a successful internship, I joined DeltaSmart Technologies as a frontend developer. My focus includes developing dynamic digital solutions tailored to modern business needs. I lead projects such as ISG, Disaster Notification, and Real Estate platforms, utilizing innovative frontend technologies to enhance user experiences.
               </p>
               <span className="left-container-arrow"></span>
             </div>
@@ -70,12 +66,9 @@ const Experience = ({ isVisible }) => {
             <div className="text-box">
               <h2>Frontend Developer Intern</h2>
               <h3>DeltaSmart Technologies</h3>
-              <small>Jun 2022 - Oct 2022</small>
+              <small>June 2022 - October 2022</small>
               <p className="description">
-                I started my internship as frontend developer. I developed a
-                company management system with my team that includes a backend
-                developer and a mobile developer. I successfully completed my
-                internship.
+                During my internship, I collaborated with backend and mobile developers to create a comprehensive company management system. I successfully completed the internship, gaining valuable experience in frontend development.
               </p>
               <span className="right-container-arrow"></span>
             </div>
@@ -83,13 +76,11 @@ const Experience = ({ isVisible }) => {
           <div className="job-container left-container">
             <img src={college} alt="college" />
             <div className="text-box">
-              <h2>Bachelor of Computer Engineering</h2>
+              <h2>Bachelor of Computer Engineering Beginnings</h2>
               <h3>Izmir Institute of Technology</h3>
-              <small>Oct 2019 - Present</small>
+              <small>October 2019 - June 2022</small>
               <p className="description">
-                In 2019, I started preparatory school at Izmir Institute of
-                Technology and completed it successfully within a year. Then, I
-                started my major, Computer Engineering.
+                I began my journey at Izmir Institute of Technology in 2019, completing preparatory school before starting my major in Computer Engineering.
               </p>
               <span className="left-container-arrow"></span>
             </div>
